@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>შემაჯამებელი წერა #4</title>
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+    <link rel="stylesheet" href="styles.css">
+    
+	<style>
+
+	</style>
+
+</head>
+
+<body>
+	<header>
+		<h1>შემაჯამებელი წერა 4</h1>
+	</header>
+	<div id="timer">დარჩენილია 30 წუთი და 60 წამი</div> <!-- Timer display -->
+	<main>
+		<form id="quizForm">
+			<!-- Question 1 -->
+			<div class="question" id="question1"> <strong> (1) 1. </strong> <br> ქვემოთ ჩამოთვლილთაგან, რომელია \( a^{\frac{11}{12}} \) -ის ტოლფასი?
+				<div> </div>
+				<div>
+					<input type="radio" name="q1" value="ა" id="q1a"><label for="q1a"> ა) \( \sqrt[12]{a^{132}}\)
+					</label><br>
+					<input type="radio" name="q1" value="ბ" id="q1b"><label for="q1b"> ბ) \( \sqrt[144]{a^{132}}\)
+					</label><br>
+					<input type="radio" name="q1" value="გ" id="q1c"><label for="q1c"> გ) \( \sqrt[121]{a^{132}}\)
+					</label><br>
+					<input type="radio" name="q1" value="დ" id="q1d"><label for="q1d"> დ) \( \sqrt[11]{a^{132}}\)
+					</label>
+				</div>
+			</div>
+
+			<!-- Question 2 -->
+			<div class="question" id="question2">
+				<strong> (1) 2. </strong> <br>
+				\( a\) რიცხვი \(100\%\)-ით აღემატება \( b\) რიცხვს, ხოლო \(b \) რიცხვი \(47\)-ზე \(90\%\)-ით ნაკლებია. რისი ტოლია \( a\) და \( b\) რიცხვების ჯამი?
+				<div> </div>
+				<div>
+					<input type="radio" name="q2" value="ა" id="q2a"><label for="q2a"> ა) \(14.1\) </label><br>
+					<input type="radio" name="q2" value="ბ" id="q2b"><label for="q2b"> ბ) \(9.4\) </label><br>
+					<input type="radio" name="q2" value="გ" id="q2c"><label for="q2c"> გ) \(13.1\) </label><br>
+					<input type="radio" name="q2" value="დ" id="q2d"><label for="q2d"> დ) \(8.4 \) </label>
+				</div>
+			</div>
+
+			<!-- Question 3 -->
+			<div class="question" id="question3">
+				<strong> (1) 3. </strong> <br>
+				ერთი ლიტრი საღებავით შესაძლებელია \(220\)  მ\(^{2}\) ფართობის მქონე კედლის შეღებვა. ოთახის კედლების საერთო ფართობია \( b\) მ\(^{2}\). ქვემოთ ჩამოთვლილთაგან, რომელი წარმოადგენს, \( P\), საღებავის რაოდენობას, რომელიც საჭიროა ოთახის კედლების ორჯერ შესაღებად? 
+				<div> </div>
+				<div>
+					<input type="radio" name="q3" value="ა" id="q3a"><label for="q3a"> ა) \(P= \frac{b}{110}\)</label><br>
+					<input type="radio" name="q3" value="ბ" id="q3b"><label for="q3b">ბ) \(P=440b\)</label><br>
+					<input type="radio" name="q3" value="გ" id="q3c"><label for="q3c">გ) \(P=\frac{b}{220}\)</label><br>
+					<input type="radio" name="q3" value="დ" id="q3d"><label for="q3d">დ) \(P=220b\)</label>
+				</div>
+			</div>
+
+			<!-- Question 4 -->
+			<div class="question" id="question4">
+				<strong> (1) 4. </strong> ტოლფერდა მართკუთხა სამკუთხედის პერიმეტრია \(94+94\sqrt{2} \). რის ტოლია ამ სამკუთხედის კათეტის სიგრძე? <br>
+				
+				<div> </div>
+				<div>
+					<input type="radio" name="q4" value="ა" id="q4a"><label for="q4a">ა) \( 47\)</label><br>
+					<input type="radio" name="q4" value="ბ" id="q4b"><label for="q4b">ბ) \( 47\sqrt{2}\)</label><br>
+					<input type="radio" name="q4" value="გ" id="q4c"><label for="q4c">გ) \( 94\)</label><br>
+					<input type="radio" name="q4" value="დ" id="q4d"><label for="q4d">დ) \( 94\sqrt{2}\)</label>
+				</div>
+			</div>
+
+			<!-- Question 5 -->
+			<div class="question" id="question5">
+				<strong> (1) 5. </strong> <br>
+				პირველი მატარებელის ვაგონების რაოდენობა 5-ით მეტია მეორე მატარებლის ვაგონების რაოდენობაზე. მას შემდეგ რაც თითოეული მატარებლიდან მოხსნეს 4 ვაგონი, პირველი მატარებლის ვაგონების რაოდენობის შეფარდება მეორესთან \( \frac{3}{2}\)-ის ტოლი გახდა. სულ რამდენი ვაგონი დარჩა ორივე მატარებლის შემადგენლობაში ერთად?  <br> 
+				<div> </div>
+				<div>
+					<input type="radio" name="q5" value="ა" id="q5a"><label for="q5a">ა) 24</label><br>
+					<input type="radio" name="q5" value="ბ" id="q5b"><label for="q5b">ბ) 25</label><br>
+					<input type="radio" name="q5" value="გ" id="q5c"><label for="q5c">გ) 33</label><br>
+					<input type="radio" name="q5" value="დ" id="q5d"><label for="q5d">დ) 35</label>
+				</div>
+			</div>
+
+			<!-- Question 6 -->
+			<div class="question" id="question6">
+				<strong> (1) 6. </strong> <br>
+				\(A\) პუნქტიდან \(AB\) და \(AC\) მიმართულებებით, რომელთა შორის კუთხე \(120^\circ\)-ია, ერთდროულად გავიდნენ ველოსიპედისტი და მოტოციკლისტი. მათი სიჩქარეები შესაბამისად \(12\) კმ/სთ და \(18\) კმ/სთ-ის ტოლია. იპოვეთ ველოსიპედისტსა და მოტოციკლისტს შორის მანძილი მოძრაობის დაწყებიდან \(20\) წუთის შემდეგ. <br> <img class='image', src='angle.png' </img>
+				<div> </div>
+				<div>
+					<input type="radio" name="q6" value="ა" id="q6a"><label for="q6a">ა) \( 8 \) კმ </label><br>
+					<input type="radio" name="q6" value="ბ" id="q6b"><label for="q6b">ბ) \( 4\sqrt{3}\) კმ</label><br>
+					<input type="radio" name="q6" value="გ" id="q6c"><label for="q6c">გ) \( 6{\sqrt{2}}\) კმ</label><br>
+					<input type="radio" name="q6" value="დ" id="q6d"><label for="q6d">დ) \( 2\sqrt{19}\) კმ </label>
+				</div>
+			</div>
+
+			<!-- Question 7 -->
+			<div class="question" id="question7">
+				<strong> (1) 7. </strong> <br>
+				იპოვეთ \(ABC\) სამკუთხედზე შემოხაზული წრეწირის რადიუსი, თუ \(AB=6,\) \(AC=9\) და \(\angle{A}=120^\circ\).
+				<div> </div>
+				<div>
+					<input type="radio" name="q7" value="ა" id="q7a"><label for="q7a">ა) \( \sqrt{21}\) </label><br>
+					<input type="radio" name="q7" value="ბ" id="q7b"><label for="q7b">ბ) \( \frac{\sqrt{63}}{\sqrt{2}}\)</label><br>
+					<input type="radio" name="q7" value="გ" id="q7c"><label for="q7c">გ) \(\sqrt{57}\)</label><br>
+					<input type="radio" name="q7" value="დ" id="q7d"><label for="q7d">დ) \( \frac{21\sqrt{3}}{\sqrt{2}}\)</label>
+				</div>
+			</div>
+
+			<!-- Question 8 -->
+			<div class="question" id="question8">
+				<strong> (1) 8. </strong> <br>
+				მართკუთხა სამკუთხედის ჰიპოტენუზა და კათეტი შებამისად 4-სმ და 3-სმ-ია. იპოვეთ ამ სამკუთხედში ჩახაზული წრეწირის რადიუსის სიგრძე.
+				<div> </div>
+				<div>
+					<input type="radio" name="q8" value="ა" id="q8a"><label for="q8a">ა) \( \frac{\sqrt{7}-1}{2} \)</label><br>
+					<input type="radio" name="q8" value="ბ" id="q8b"><label for="q8b">ბ) \( 1 \)</label><br>
+					<input type="radio" name="q8" value="გ" id="q8c"><label for="q8c">გ) \( \frac{5\sqrt{7}}{2} \)</label><br>
+					<input type="radio" name="q8" value="დ" id="q8d"><label for="q8d">დ) \( \sqrt{3} \)</label>
+				</div>
+			</div>
+
+			<!-- Question 9 -->
+			<div class="question" id="question9">
+				<strong> (1) 9. </strong> <br>
+				\(ABC\) სამკუთხედის \(AC\) ფუძის პარალელური წრფე \(AB\) და \(BC\) გვერდებს შესაბამისად \(E\) და \(F\) წერტილებში კვეთს. იპოვეთ \(EBF\) სამკუთხედის შეფარდება \(AEFC\) ოთხკუთხედის ფართობთან, თუ \(AE : EB =1 : 1 \).
+				<div> </div>
+				<div>
+					<input type="radio" name="q9" value="ა" id="q9a"><label for="q9a"> ა) \(1 : 4\) </label><br>
+					<input type="radio" name="q9" value="ბ" id="q9b"><label for="q9b"> ბ) \( 1 : 2 \) </label><br>
+					<input type="radio" name="q9" value="გ" id="q9c"><label for="q9c">გ) \( 2 : 3\sqrt{2}\) </label><br>
+					<input type="radio" name="q9" value="დ" id="q9d"><label for="q9d"> დ) \( 1 : 3\) </label>
+				</div>
+			</div>
+
+			<!-- Question 10 -->
+			<div class="question" id="question10">
+				<strong> (1) 10. </strong> <br>
+				25%-იანი მარილხსნარის რამდენი ლიტრი უნდა შევურიოთ 3 ლიტრ 10%-იან მარილხსნარს, რათა მივიღოთ 15%-იანი მარილხსნარი? 
+				<div> </div>
+				<div>
+					<input type="radio" name="q10" value="ა" id="q10a"><label for="q10a">ა) \(1.5\ ლ. \) </label><br>
+					<input type="radio" name="q10" value="ბ" id="q10b"><label for="q10b">ბ) \( 2\ ლ. \)</label><br>
+					<input type="radio" name="q10" value="გ" id="q10c"><label for="q10c">გ) \( 2.5\ ლ.\)</label><br>
+					<input type="radio" name="q10" value="დ" id="q10d"><label for="q10d">დ) \( 2.75\ ლ. \)</label>
+				</div>
+			</div>
+
+			<!-- Question 11 -->
+			<div class="question" id="question11">
+				<strong> (1) 11. </strong> <br>
+				რის ტოლია \( (\log_2{x^2-12x+36})(x-5)=0\) განტოლების ამონახსნთა რაოდენობა? 
+
+				<div>
+					<input type="radio" name="q11" value="ა" id="q11a"><label for="q11a">ა) \( 1 \)</label><br>
+					<input type="radio" name="q11" value="ბ" id="q11b"><label for="q11b">ბ) \( 2 \)</label><br>
+					<input type="radio" name="q11" value="გ" id="q11c"><label for="q11c">გ) \( 3 \)</label><br>
+					<input type="radio" name="q11" value="დ" id="q11d"><label for="q11d">დ) \( 4\)</label>
+				</div>
+			</div>
+
+			<!-- Question 12 -->
+			<div class="question" id="question12">
+				<strong> (1) 12. </strong> <br> 
+				არითმეტიკული პროგრესიის პირველი 10 წევრის ჯამი,  \(S_{10}\)= 100, ხოლო პირველი 30 წევრის ჯამი \(S_{30}\)= 900. იპოვეთ აღნიშნული პროგრესიის პირველი 41 წევრის ჯამი.
+				<div>
+					<input type="radio" name="q12" value="ა" id="q12a"><label for="q12a">ა) \( 1860 \)</label><br>
+					<input type="radio" name="q12" value="ბ" id="q12b"><label for="q12b">ბ) \( 1640 \)</label><br>
+					<input type="radio" name="q12" value="გ" id="q12c"><label for="q12c">გ) \( 1900 \)</label><br>
+					<input type="radio" name="q12" value="დ" id="q12d"><label for="q12d">დ) \( 1722 \)</label>
+				</div>
+			</div>
+			<!-- Question 13 -->
+			<div class="question" id="question13">
+				<strong> (1) 13. </strong> <br>
+				პირველი მილით ცარიელი ავზი ივსება 12 წუთში, ხოლო მეორე მილით - 18 წუთში. რამდენ წუთში აივსება  ავზის ნახევარი ორივე მილით?   
+					<div>
+						<input type="radio" name="q13" value="ა" id="q13a"><label for="q13a">ა) \(  3\ წთ. \)</label><br>
+						<input type="radio" name="q13" value="ბ" id="q13b"><label for="q13b">ბ) \( 3.6\ წთ. \)</label><br>
+						<input type="radio" name="q13" value="გ" id="q13c"><label for="q13c">გ) \(  4.2\ წთ. \)</label><br>
+						<input type="radio" name="q13" value="დ" id="q13d"><label for="q13d">დ) \( 4.6\ წთ. \)</label>
+					</div>
+			</div>
+			<!-- Question 14 -->
+			<div class="question" id="question14">
+				<strong> (1) 14. </strong> <br>
+				მათე თავისი მანქანით კვირაში საშუალოდ 100 კმ-ს გადის. მისი მანქანა ყოველ 25 კმ-ზე 1 ლიტრ საწვავს მოიხმარს, საწვავის 1 ლიტრი კი 4 ლარი ღირს. მათე რომ კვირაში საშუალოდ m კილომეტრით ნაკლებს გადიოდეს, ის კვირაში 5 ლარის დაზოგვას შეძლებდა. ქვემოთ ჩამოთვლილთაგან, რომელი განტოლება აღწერს აღნიშნულ დამოკიდებულებას? 
+				<div>
+					<input type="radio" name="q14" value="ა" id="q14a"><label for="q14a">ა) \( \frac{4}{25}m=5 \)  </label><br>
+					<input type="radio" name="q14" value="ბ" id="q14b"><label for="q14b">ბ) \(\frac{16}{25}m=95 \)</label><br>
+					<input type="radio" name="q14" value="გ" id="q14c"><label for="q14c">გ) \( \frac{25}{4}m=5 \)</label><br>
+					<input type="radio" name="q14" value="დ" id="q14d"><label for="q14d">დ)\( \frac{4}{25}m=95 \)</label>
+				</div>
+			</div>
+
+			<!-- Question 15 -->
+			<div class="question" id="question15">
+				<strong> (1) 15. </strong> <br>
+				\(ABC\) სამკუთხედის \(AB\) გვერდზე აღებულია \(D\) და \(F\)  წერტილები, ხოლო \(BC\) გვერდზე  \(E\) და  \(G\) წერტილები ისე, რომ \(DE\) და \(FG\) მონაკვეთები \(AC\) ფუძის პარალელურია და \(ABC\) სამკუთხედს ტოლი ფართობის მქონე სამ ფიგურად ყოფს (იხ. სურათი). იპოვეთ \(FD\) მონაკვეთის სიგრძის შეფარდება \(AB\) მონაკვეთის სიგრძესთან. 
+				<div>
+					<input type="radio" name="q15" value="ა" id="q15a"><label for="q15a">ა) \( \frac{\sqrt{3}-1}{\sqrt{2}}\)</label><br>
+					<input type="radio" name="q15" value="ბ" id="q15b"><label for="q15b">ბ) \( \frac{\sqrt{2}}{\sqrt{3}+1}\)</label><br>
+					<input type="radio" name="q15" value="გ" id="q15c"><label for="q15c">გ) \( \frac{\sqrt{3}}{\sqrt{2}+1} \)</label><br>
+					<input type="radio" name="q15" value="დ" id="q15d"><label for="q15d">დ) \(\frac{\sqrt{2}-1}{\sqrt{3}}\)</label>
+				</div>
+			</div>
+			</div>
+			<button type="button" id="submit-button" onclick="submitQuiz()">შემოწმება</button>
+		</form>
+
+		<div id="result-section" style="display: none;">
+    <div id="result"></div>
+    <div id="result-table"></div>
+</div>
+		</div>
+	</main>
+	<footer>
+
+	</footer>
+	<script src="script.js"></script>
+</body>
+
+</html>
